@@ -194,7 +194,7 @@ input {
     text-align: center;
     border-radius: 50px;
     margin-top: 24px;
-    margin-right: 55%;
+    margin-right: 63%;
     cursor: pointer;
     color: white;
     background: linear-gradient(83.67deg, #2194FF 10.02%, #2563EB 90.05%);
@@ -273,10 +273,10 @@ hr::after {
     margin-left: 20px;
 }
 
-.card {
+.card-1 {
     position: relative;
-    height: 100%;
-    width: 100%;
+    width: 595px;
+    height: 500px;
 }
 
 .bg-image::after {
@@ -292,7 +292,7 @@ hr::after {
 .svg-facebook {
     position: absolute;
     top: 3%;
-    left: 18%;
+    left: 10%;
     z-index: 2;
     background-color: white;
     border-radius: 50%;
@@ -320,8 +320,8 @@ hr::after {
 
 .svg-in {
     position: absolute;
-    top: 26%;
-    left: 18%;
+    top: 24%;
+    left: 10%;
     z-index: 2;
     background-color: white;
     border-radius: 50%;
@@ -333,8 +333,8 @@ hr::after {
 
 .svg-instagram {
     position: absolute;
-    top: 50%;
-    left: 18%;
+    top: 46%;
+    left: 10%;
     z-index: 2;
     background-color: white;
     border-radius: 50%;
@@ -346,8 +346,8 @@ hr::after {
 
 .svg-twitter {
     position: absolute;
-    top: 73%;
-    left: 18%;
+    top: 66%;
+    left: 10%;
     z-index: 2;
     background-color: white;
     border-radius: 50%;
@@ -360,28 +360,28 @@ hr::after {
 .diamond {
     position: absolute;
     top: 8%;
-    right: 9%;
+    right: 27%;
     z-index: 1;
 }
 
 .ellipse {
     position: absolute;
-    bottom: -4%;
-    right: -6%;
+    bottom: 8%;
+    right: 12%;
     z-index: 1;
 }
 
 .group {
     position: absolute;
-    top: 15%;
-    right: -4%;
+    top: 17%;
+    right: 14%;
     z-index: 1;
 }
 
 .line {
     position: absolute;
     top: 8%;
-    right: 38%;
+    right: 50%;
     z-index: 1;
 }
 
@@ -402,11 +402,6 @@ hr::after {
         padding-left: 12px;
         padding-right: 12px;
     }
-
-    .position {
-        position: unset;
-        /* padding-top: 30px; */
-    }
 }
 
 @media (max-width:991.98px) {
@@ -414,55 +409,60 @@ hr::after {
         height: 100%;
         width: 100%;
         position: absolute;
-        top: 80%;
+        top: 100%;
     }
 
+    .position {
+        position: unset;
+    }
+}
+
+@media (max-width:992px) {
     .ellipse {
-        position: relative;
-        top: 28%;
-        left: 14%;
-    }
-
-    .line {
-        position: relative;
-        top: 10%;
-        left: -42%;
-    }
-
-    .diamond {
+        top: 34%;
+        left: 35%;
         position: absolute;
-        top: 42%;
-        left: 24%;
     }
 
     .group {
-        position: absolute;
-        top: 51%;
-        left: 48%;
-    }
-
-    .svg-facebook {
-        position: absolute;
-        top: 38%;
-        left: 22%;
-
-    }
-
-    .svg-in {
-        position: absolute;
-        left: 22%;
         top: 59%;
+        left: 76%;
+        position: absolute;
     }
 
-    .svg-instagram {
+    .line {
+        top: 52%;
+        left: 46%;
         position: absolute;
-        left: 22%;
-        top: 81%;
+    }
+
+    .diamond {
+        top: 52%;
+        left: 46%;
+        position: absolute;
     }
 
     .svg-twitter {
+        top: 110%;
+        left: 42%;
         position: absolute;
-        left: 22%;
-        top: 100%;
+    }
+
+    .svg-instagram {
+        top: 90%;
+        left: 42%;
+        position: absolute;
+    }
+
+    .svg-facebook {
+        top: 48%;
+        left: 42%;
+        position: absolute;
+    }
+
+    .svg-in {
+        top: 68%;
+        left: 42%;
+        position: absolute;
     }
 }
