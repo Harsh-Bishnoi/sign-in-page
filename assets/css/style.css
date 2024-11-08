@@ -14,7 +14,6 @@ section {
     align-items: center;
     justify-content: center;
     justify-items: center;
-    text-align: center;
 }
 
 .container {
@@ -59,12 +58,6 @@ section {
     max-width: 100%;
 }
 
-.post {
-    text-align: left;
-    margin-top: 80px;
-    z-index: 1;
-}
-
 .head {
     font-family: "Poppins", sans-serif;
     font-size: 32px;
@@ -93,73 +86,60 @@ section {
     color: #2563EB;
 }
 
-input {
-    font-family: "Lato", sans-serif;
-    width: 252px;
-    height: 24px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    margin-left: 10px;
-    color: #9197A6;
-    background-color: #E4EAF7;
-    border: 1px solid #E4EAF7;
+.position-relative {
+    position: relative;
+}
+
+.form {
+    max-width: 340px;
 }
 
 .email {
-    width: 25px;
-    height: 25px;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #F5F8FF;
+    width: 100%;
+    max-width: 340px;
     border-radius: 6px;
-    margin-top: 32px;
-}
-
-.svg-email {
-    margin-top: 4px;
-}
-
-.gmail {
-    background-color: #E4EAF7;
-    width: 340px;
-    height: 44px;
-    padding: 10px 16px 10px 16px;
-    border-radius: 6px;
-}
-
-.svg-password {
-    margin-top: 10px;
-}
-
-.eye {
-    margin-top: 4px;
-    margin-left: 10px;
+    padding-left: 40px;
+    padding: 10px;
+    border: 1px solid #E4EAF7;
 }
 
 .password {
     font-family: "Lato", sans-serif;
-    width: 252px;
-    height: 24px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    margin-left: 10px;
+    background-color: #F5F8FF;
+    width: 100%;
+    max-width: 340px;
+    border-radius: 6px;
+    padding-right: 40px;
+    padding: 10px;
+    border: 1px solid #E4EAF7;
 }
 
-.pass {
-    background-color: #E4EAF7;
-    width: 340px;
-    height: 44px;
-    padding: 10px 16px 10px 16px;
-    border-radius: 6px;
-    margin-top: 10px;
+.svg-email {
+    left: 1%;
+    bottom: 30px;
+}
+
+.svg-password {
+    left: 1%;
+    bottom: 30px;
+}
+
+.svg-eye {
+    left: 84%;
+    bottom: -2px;
 }
 
 .checkbox {
     width: 14px;
     height: 14px;
     border: 1px solid #9197A6;
-    margin-top: 15.5px;
+    margin-top: 4px;
     cursor: pointer;
 }
 
@@ -170,7 +150,6 @@ input {
     line-height: 21px;
     text-align: center;
     margin-left: 10px;
-    margin-top: 13px;
     color: #62656D;
     cursor: pointer;
 }
@@ -182,14 +161,19 @@ input {
     line-height: 21px;
     text-align: right;
     color: #62656D;
-    margin-top: 13px;
     padding-left: 100px;
     cursor: pointer;
 }
 
+.main {
+    width: 340px;
+    justify-content: space-between;
+}
+
 .btn {
     font-family: "Poppins", sans-serif;
-    width: 340px;
+    max-width: 340px;
+    width: 100%;
     height: 48px;
     text-align: center;
     border-radius: 50px;
@@ -234,7 +218,8 @@ hr::after {
 }
 
 .google-text {
-    width: 166px;
+    max-width: 166px;
+    width: 100%;
     height: 41px;
     padding: 10px 16px 10px 16px;
     border-radius: 6px;
@@ -259,7 +244,8 @@ hr::after {
 }
 
 .facebook-text {
-    width: 166px;
+    max-width: 166px;
+    width: 100%;
     height: 41px;
     padding: 10px 16px 10px 16px;
     border-radius: 6px;
@@ -304,7 +290,7 @@ hr::after {
 
 .svg-1 {
     position: absolute;
-    left: 15%;
+    left: 14.5%;
 }
 
 .svg-2 {
@@ -415,9 +401,7 @@ hr::after {
     .position {
         position: unset;
     }
-}
 
-@media (max-width:992px) {
     .ellipse {
         top: 34%;
         left: 35%;
